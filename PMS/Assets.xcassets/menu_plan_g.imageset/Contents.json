@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "menu_plan_g.png",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

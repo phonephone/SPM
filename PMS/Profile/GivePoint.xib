@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Kanit-Regular.ttf">
+            <string>Kanit-Regular</string>
+        </array>
+        <array key="Kanit-SemiBold.ttf">
+            <string>Kanit-SemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="GivePoint">
+            <connections>
+                <outlet property="idL" destination="zJz-F8-FA6" id="1FN-O5-qdW"/>
+                <outlet property="idR" destination="QNi-NX-wyw" id="pk8-xM-0um"/>
+                <outlet property="pointL" destination="JL4-qV-ZVp" id="Kmg-gN-JOs"/>
+                <outlet property="pointR" destination="iGk-pI-qjX" id="IoL-lo-3a0"/>
+                <outlet property="qrBtn" destination="ntk-BB-Eu4" id="6J5-Zw-gXU"/>
+                <outlet property="reasonL" destination="vaQ-6e-x8f" id="wNI-2h-t5y"/>
+                <outlet property="reasonR" destination="Sr0-aU-Vm1" id="XKL-ED-EbE"/>
+                <outlet property="remarkL" destination="aZA-Mt-Mp3" id="KUY-uB-1GE"/>
+                <outlet property="remarkR" destination="fei-9c-kAg" id="U1j-AS-FeW"/>
+                <outlet property="sendBtn" destination="P8U-B9-DZd" id="cbm-IC-xen"/>
+                <outlet property="titleLabel" destination="3s0-HW-eZt" id="ht4-MZ-Bl5"/>
+                <outlet property="view" destination="lng-MW-io4" id="pBt-NT-HCd"/>
+                <outlet property="warnLabel" destination="lU8-L4-2yV" id="CXo-Ek-hVg"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="lng-MW-io4">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dt5-AA-P5g">
+                    <rect key="frame" x="0.0" y="44" width="414" height="64.5"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg_header" translatesAutoresizingMaskIntoConstraints="NO" id="235-lx-JKe">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="64.5"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="235-lx-JKe" secondAttribute="height" multiplier="869:135" id="ykR-B1-Tgq"/>
+                            </constraints>
+                        </imageView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v4V-Di-OdA">
+                            <rect key="frame" x="10.5" y="16" width="32" height="32"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="v4V-Di-OdA" secondAttribute="height" multiplier="1:1" id="Pu8-Oh-z42"/>
+                            </constraints>
+                            <state key="normal" image="btn_back"/>
+                            <connections>
+                                <action selector="back:" destination="-1" eventType="touchUpInside" id="s85-17-q4n"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Give Points" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3s0-HW-eZt">
+                            <rect key="frame" x="139.5" y="15.5" width="135.5" height="33.5"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                            <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="v4V-Di-OdA" firstAttribute="height" secondItem="dt5-AA-P5g" secondAttribute="height" multiplier="0.5" id="ES0-1R-AlF"/>
+                        <constraint firstAttribute="trailing" secondItem="235-lx-JKe" secondAttribute="trailing" id="Jnh-i8-cuv"/>
+                        <constraint firstItem="235-lx-JKe" firstAttribute="leading" secondItem="dt5-AA-P5g" secondAttribute="leading" id="PGx-QW-rh4"/>
+                        <constraint firstItem="235-lx-JKe" firstAttribute="top" secondItem="dt5-AA-P5g" secondAttribute="top" id="XEc-EI-s5I"/>
+                        <constraint firstAttribute="bottom" secondItem="235-lx-JKe" secondAttribute="bottom" id="YgF-wB-CEc"/>
+                        <constraint firstItem="3s0-HW-eZt" firstAttribute="centerY" secondItem="dt5-AA-P5g" secondAttribute="centerY" id="dRR-oa-bHa"/>
+                        <constraint firstItem="v4V-Di-OdA" firstAttribute="leading" secondItem="dt5-AA-P5g" secondAttribute="centerX" multiplier="0.05" id="iPf-7o-SXZ"/>
+                        <constraint firstItem="3s0-HW-eZt" firstAttribute="centerX" secondItem="dt5-AA-P5g" secondAttribute="centerX" id="taL-4F-JjE"/>
+                        <constraint firstItem="v4V-Di-OdA" firstAttribute="centerY" secondItem="dt5-AA-P5g" secondAttribute="centerY" id="yUs-0f-bLn"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cWI-W7-IGZ">
+                    <rect key="frame" x="0.0" y="108.5" width="414" height="787.5"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KaT-wK-U0Q">
+                            <rect key="frame" x="0.0" y="1" width="414" height="786.5"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ให้คะแนนพนักงาน" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Sj-tr-DDC">
+                                    <rect key="frame" x="20.5" y="19.5" width="147" height="30"/>
+                                    <fontDescription key="fontDescription" name="Kanit-SemiBold" family="Kanit" pointSize="20"/>
+                                    <color key="textColor" red="0.0" green="0.27588295940000002" blue="0.16469025609999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ntk-BB-Eu4">
+                                    <rect key="frame" x="134.5" y="59.5" width="145" height="145"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" secondItem="ntk-BB-Eu4" secondAttribute="height" multiplier="1:1" id="rKU-0W-rC4"/>
+                                    </constraints>
+                                    <state key="normal" backgroundImage="btn_scan_qr"/>
+                                    <connections>
+                                        <action selector="qrClick:" destination="-1" eventType="touchUpInside" id="2GD-nn-eQg"/>
+                                    </connections>
+                                </button>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="รหัสพนักงาน" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zJz-F8-FA6">
+                                    <rect key="frame" x="20.5" y="229" width="95" height="27"/>
+                                    <fontDescription key="fontDescription" name="Kanit-Regular" family="Kanit" pointSize="18"/>
+                                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="เหตุผล" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vaQ-6e-x8f">
+                                    <rect key="frame" x="65" y="343" width="50.5" height="27"/>
+                                    <fontDescription key="fontDescription" name="Kanit-Regular" family="Kanit" pointSize="18"/>
+                                    <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="หมายเหตุ" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aZA-Mt-Mp3">
+                                    <rect key="frame" x="47" y="400" width="68.5" height="27"/>
+                                    <fontDescription key="fontDescription" name="Kanit-Regular" family="Kanit" pointSize="18"/>
+                                    <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="กรุณากรอกรหัสพนักงาน" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="QNi-NX-wyw">
+                                    <rect key="frame" x="135.5" y="228" width="248.5" height="28.5"/>
+                                    <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <fontDescription key="fontDescription" name="Kanit-Regular" family="Kanit" pointSize="18"/>
+                                    <textInputTraits key="textInputTraits"/>
+                                </textField>
+                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="กรุณากรอกหมายเหตุ" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="fei-9c-kAg">
+                                    <rect key="frame" x="135.5" y="399" width="248.5" height="28.5"/>
+                                    <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <fontDescription key="fontDescription" name="Kanit-Regular" family="Kanit" pointSize="18"/>
+                                    <textInputTraits key="textInputTraits"/>
+                                </textField>
+                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="เลือกเหตุผล" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="Sr0-aU-Vm1">
+                                    <rect key="frame" x="135.5" y="342" width="248.5" height="28.5"/>
+                                    <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <fontDescription key="fontDescription" name="Kanit-Regular" family="Kanit" pointSize="18"/>
+                                    <textInputTraits key="textInputTraits"/>
+                                </textField>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P8U-B9-DZd">
+                                    <rect key="frame" x="41.5" y="477" width="331" height="50"/>
+                                    <color key="backgroundColor" red="0.0" green="0.27450980390000002" blue="0.1647058824" alpha="1" colorSpace="calibratedRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" secondItem="P8U-B9-DZd" secondAttribute="height" multiplier="53:8" id="2w0-3G-IpC"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="Kanit-Regular" family="Kanit" pointSize="20"/>
+                                    <state key="normal" title="ให้คะแนน">
+                                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="submitPoint:" destination="-1" eventType="touchUpInside" id="vUN-Ga-YP2"/>
+                                    </connections>
+                                </button>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="btn_dropdown" translatesAutoresizingMaskIntoConstraints="NO" id="AgK-Vj-Ti3">
+                                    <rect key="frame" x="384" y="344" width="25" height="25"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" secondItem="AgK-Vj-Ti3" secondAttribute="height" multiplier="1:1" id="QJe-xJ-oOp"/>
+                                    </constraints>
+                                </imageView>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lU8-L4-2yV">
+                                    <rect key="frame" x="58" y="557" width="298.5" height="81"/>
+                                    <string key="text">คะแนนของท่านไม่พอสำหรับการให้คะแนน 
+กรุณาตรวจสอบใหม่อีกครั้ง
+(Insufficient Points)</string>
+                                    <fontDescription key="fontDescription" name="Kanit-Regular" family="Kanit" pointSize="18"/>
+                                    <color key="textColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="เลือกคะแนน" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="iGk-pI-qjX">
+                                    <rect key="frame" x="135.5" y="285" width="248.5" height="28.5"/>
+                                    <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <fontDescription key="fontDescription" name="Kanit-Regular" family="Kanit" pointSize="18"/>
+                                    <textInputTraits key="textInputTraits"/>
+                                </textField>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="btn_dropdown" translatesAutoresizingMaskIntoConstraints="NO" id="4ZK-iq-37z">
+                                    <rect key="frame" x="386" y="287" width="25" height="25"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" secondItem="4ZK-iq-37z" secondAttribute="height" multiplier="1:1" id="Rad-HZ-Fwc"/>
+                                    </constraints>
+                                </imageView>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="คะแนนที่ให้" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JL4-qV-ZVp">
+                                    <rect key="frame" x="39.5" y="286" width="76" height="27"/>
+                                    <fontDescription key="fontDescription" name="Kanit-Regular" family="Kanit" pointSize="18"/>
+                                    <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <constraints>
+                                <constraint firstItem="iGk-pI-qjX" firstAttribute="centerY" secondItem="JL4-qV-ZVp" secondAttribute="centerY" id="1cG-pk-r6P"/>
+                                <constraint firstItem="fei-9c-kAg" firstAttribute="centerY" secondItem="aZA-Mt-Mp3" secondAttribute="centerY" id="1rx-f2-Wga"/>
+                                <constraint firstItem="4ZK-iq-37z" firstAttribute="leading" secondItem="iGk-pI-qjX" secondAttribute="trailing" constant="2" id="2Uy-G1-bFS"/>
+                                <constraint firstItem="vaQ-6e-x8f" firstAttribute="trailing" secondItem="zJz-F8-FA6" secondAttribute="trailing" id="9Ga-cG-pHf"/>
+                                <constraint firstAttribute="trailing" secondItem="QNi-NX-wyw" secondAttribute="trailing" constant="30" id="FxD-VJ-BYb"/>
+                                <constraint firstItem="Sr0-aU-Vm1" firstAttribute="trailing" secondItem="QNi-NX-wyw" secondAttribute="trailing" id="HCp-QI-drg"/>
+                                <constraint firstItem="vaQ-6e-x8f" firstAttribute="top" secondItem="JL4-qV-ZVp" secondAttribute="bottom" constant="30" id="Hjy-HH-oXj"/>
+                                <constraint firstItem="QNi-NX-wyw" firstAttribute="leading" secondItem="zJz-F8-FA6" secondAttribute="trailing" constant="20" id="JRg-7R-YCN"/>
+                                <constraint firstItem="lU8-L4-2yV" firstAttribute="centerX" secondItem="KaT-wK-U0Q" secondAttribute="centerX" id="Jbb-At-qKq"/>
+                                <constraint firstItem="iGk-pI-qjX" firstAttribute="leading" secondItem="QNi-NX-wyw" secondAttribute="leading" id="Jgz-nR-Cg6"/>
+                                <constraint firstItem="zJz-F8-FA6" firstAttribute="leading" secondItem="KaT-wK-U0Q" secondAttribute="centerX" multiplier="0.1" id="OJF-9V-QUD"/>
+                                <constraint firstItem="P8U-B9-DZd" firstAttribute="top" secondItem="aZA-Mt-Mp3" secondAttribute="bottom" constant="50" id="OgH-9b-mWb"/>
+                                <constraint firstItem="zJz-F8-FA6" firstAttribute="top" secondItem="ntk-BB-Eu4" secondAttribute="bottom" constant="24.5" id="OrH-jM-97B"/>
+                                <constraint firstItem="fei-9c-kAg" firstAttribute="leading" secondItem="Sr0-aU-Vm1" secondAttribute="leading" id="PF3-Ql-Bl8"/>
+                                <constraint firstItem="AgK-Vj-Ti3" firstAttribute="leading" secondItem="Sr0-aU-Vm1" secondAttribute="trailing" id="QMH-ce-3iN"/>
+                                <constraint firstItem="AgK-Vj-Ti3" firstAttribute="width" secondItem="KaT-wK-U0Q" secondAttribute="width" multiplier="0.06" id="SfS-JL-oiF"/>
+                                <constraint firstItem="JL4-qV-ZVp" firstAttribute="trailing" secondItem="zJz-F8-FA6" secondAttribute="trailing" id="TjU-hh-scj"/>
+                                <constraint firstItem="aZA-Mt-Mp3" firstAttribute="top" secondItem="vaQ-6e-x8f" secondAttribute="bottom" constant="30" id="TkC-Mf-d0w"/>
+                                <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="lU8-L4-2yV" secondAttribute="bottom" constant="50" id="UeZ-vf-29x"/>
+                                <constraint firstItem="fei-9c-kAg" firstAttribute="trailing" secondItem="Sr0-aU-Vm1" secondAttribute="trailing" id="WMi-lO-G8g"/>
+                                <constraint firstItem="ntk-BB-Eu4" firstAttribute="top" secondItem="8Sj-tr-DDC" secondAttribute="bottom" constant="10" id="bcQ-BV-hgb"/>
+                                <constraint firstItem="Sr0-aU-Vm1" firstAttribute="centerY" secondItem="vaQ-6e-x8f" secondAttribute="centerY" id="dZl-0M-E5S"/>
+                                <constraint firstItem="iGk-pI-qjX" firstAttribute="trailing" secondItem="QNi-NX-wyw" secondAttribute="trailing" id="dri-eV-ZzR"/>
+                                <constraint firstItem="aZA-Mt-Mp3" firstAttribute="trailing" secondItem="vaQ-6e-x8f" secondAttribute="trailing" id="eae-hw-MPs"/>
+                                <constraint firstItem="JL4-qV-ZVp" firstAttribute="top" secondItem="zJz-F8-FA6" secondAttribute="bottom" constant="30" id="fvO-Mk-8Jp"/>
+                                <constraint firstItem="ntk-BB-Eu4" firstAttribute="centerX" secondItem="KaT-wK-U0Q" secondAttribute="centerX" id="g6S-nI-8YF"/>
+                                <constraint firstItem="ntk-BB-Eu4" firstAttribute="width" secondItem="KaT-wK-U0Q" secondAttribute="width" multiplier="0.35" id="jyy-32-s95"/>
+                                <constraint firstItem="AgK-Vj-Ti3" firstAttribute="centerY" secondItem="Sr0-aU-Vm1" secondAttribute="centerY" id="nKf-63-0vY"/>
+                                <constraint firstItem="P8U-B9-DZd" firstAttribute="centerX" secondItem="KaT-wK-U0Q" secondAttribute="centerX" id="oHI-Vm-Xnr"/>
+                                <constraint firstItem="4ZK-iq-37z" firstAttribute="centerY" secondItem="iGk-pI-qjX" secondAttribute="centerY" id="pz7-uW-Q1D"/>
+                                <constraint firstItem="Sr0-aU-Vm1" firstAttribute="leading" secondItem="QNi-NX-wyw" secondAttribute="leading" id="q2p-Tf-7eO"/>
+                                <constraint firstItem="4ZK-iq-37z" firstAttribute="width" secondItem="KaT-wK-U0Q" secondAttribute="width" multiplier="0.06" id="tb7-bU-iEn"/>
+                                <constraint firstItem="8Sj-tr-DDC" firstAttribute="top" secondItem="KaT-wK-U0Q" secondAttribute="centerY" multiplier="0.05" id="uVK-Ho-SZS"/>
+                                <constraint firstItem="lU8-L4-2yV" firstAttribute="top" secondItem="P8U-B9-DZd" secondAttribute="bottom" constant="30" id="wYd-Pj-46l"/>
+                                <constraint firstItem="QNi-NX-wyw" firstAttribute="centerY" secondItem="zJz-F8-FA6" secondAttribute="centerY" id="wZY-r6-vTT"/>
+                                <constraint firstItem="P8U-B9-DZd" firstAttribute="width" secondItem="KaT-wK-U0Q" secondAttribute="width" multiplier="0.8" id="xIQ-SR-Rbv"/>
+                                <constraint firstItem="8Sj-tr-DDC" firstAttribute="leading" secondItem="KaT-wK-U0Q" secondAttribute="centerX" multiplier="0.1" id="yj1-nr-egs"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" red="0.90980398650000005" green="0.90980398650000005" blue="0.91764712329999998" alpha="1" colorSpace="deviceRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="KaT-wK-U0Q" secondAttribute="trailing" id="Ao4-Ey-vkL"/>
+                        <constraint firstItem="KaT-wK-U0Q" firstAttribute="leading" secondItem="cWI-W7-IGZ" secondAttribute="leading" id="HT5-Iz-SJY"/>
+                        <constraint firstAttribute="bottom" secondItem="KaT-wK-U0Q" secondAttribute="bottom" id="fS6-me-9gS"/>
+                        <constraint firstItem="KaT-wK-U0Q" firstAttribute="top" secondItem="cWI-W7-IGZ" secondAttribute="top" constant="1" id="wYJ-2x-qqQ"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="tG4-1N-Icg"/>
+            <color key="backgroundColor" red="0.0" green="0.27450980390000002" blue="0.1647058824" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="cWI-W7-IGZ" firstAttribute="trailing" secondItem="tG4-1N-Icg" secondAttribute="trailing" id="1kQ-1O-iLO"/>
+                <constraint firstItem="tG4-1N-Icg" firstAttribute="top" secondItem="dt5-AA-P5g" secondAttribute="top" id="6QV-oP-UHh"/>
+                <constraint firstItem="dt5-AA-P5g" firstAttribute="leading" secondItem="tG4-1N-Icg" secondAttribute="leading" id="ANT-ll-e7Q"/>
+                <constraint firstItem="cWI-W7-IGZ" firstAttribute="bottom" secondItem="lng-MW-io4" secondAttribute="bottom" id="M77-Hc-hfY"/>
+                <constraint firstItem="cWI-W7-IGZ" firstAttribute="leading" secondItem="tG4-1N-Icg" secondAttribute="leading" id="VPN-Dw-fNx"/>
+                <constraint firstItem="dt5-AA-P5g" firstAttribute="width" secondItem="lng-MW-io4" secondAttribute="width" id="b75-pW-qTK"/>
+                <constraint firstItem="cWI-W7-IGZ" firstAttribute="top" secondItem="dt5-AA-P5g" secondAttribute="bottom" id="ze1-Td-0Eu"/>
+            </constraints>
+            <point key="canvasLocation" x="11.594202898550726" y="123.88392857142857"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="bg_header" width="869" height="135"/>
+        <image name="btn_back" width="100" height="100"/>
+        <image name="btn_dropdown" width="40" height="40"/>
+        <image name="btn_scan_qr" width="128" height="128"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

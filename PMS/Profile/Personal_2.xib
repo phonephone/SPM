@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Kanit-Regular.ttf">
+            <string>Kanit-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="Personal_2">
+            <connections>
+                <outlet property="cameraBtn" destination="4k3-cQ-OSd" id="ht6-dv-WUX"/>
+                <outlet property="emailL" destination="4ZG-XT-a4e" id="U2U-bI-OGC"/>
+                <outlet property="emailR" destination="lYq-7A-dGC" id="2W4-hD-3Xz"/>
+                <outlet property="emailprivateL" destination="7BX-9M-eEH" id="XZk-lT-nxF"/>
+                <outlet property="emailprivateR" destination="0Qr-Nk-jE6" id="ida-7g-Rti"/>
+                <outlet property="fbL" destination="pre-uq-SjB" id="Ju5-xE-y8k"/>
+                <outlet property="fbR" destination="doW-Uz-APm" id="Nfa-ZU-BQu"/>
+                <outlet property="igL" destination="81w-d4-PeN" id="wGZ-zL-X3e"/>
+                <outlet property="igR" destination="X7B-cj-CMX" id="44q-7d-SbA"/>
+                <outlet property="lineL" destination="xzQ-Ak-E3C" id="9ty-ck-4s3"/>
+                <outlet property="lineR" destination="b4s-vO-hVl" id="pIc-Sm-Jkw"/>
+                <outlet property="linkL" destination="K4I-kU-sE9" id="1LD-DE-NDS"/>
+                <outlet property="linkR" destination="wMG-VM-xtl" id="Mle-Ul-YK2"/>
+                <outlet property="nameLabel" destination="lEZ-mJ-mf0" id="cYT-iK-qbd"/>
+                <outlet property="profilePic" destination="hkN-Dx-LaH" id="cIw-Ip-1AB"/>
+                <outlet property="saveBtn" destination="K3Q-S1-bcy" id="PFc-XX-cJm"/>
+                <outlet property="telL" destination="Dw2-Wk-k4T" id="fHk-dd-FmP"/>
+                <outlet property="telR" destination="dIN-Mo-rP6" id="zOZ-OH-eKI"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="menu_personal_g" translatesAutoresizingMaskIntoConstraints="NO" id="hkN-Dx-LaH">
+                    <rect key="frame" x="145" y="22.5" width="124" height="124"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="hkN-Dx-LaH" secondAttribute="height" multiplier="1:1" id="ISS-jJ-JLJ"/>
+                    </constraints>
+                </imageView>
+                <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4k3-cQ-OSd">
+                    <rect key="frame" x="232" y="109.5" width="37" height="37"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="4k3-cQ-OSd" secondAttribute="height" multiplier="1:1" id="N1K-Gm-4E4"/>
+                    </constraints>
+                    <state key="normal" image="profile_camera"/>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="พนักงาน : " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lEZ-mJ-mf0">
+                    <rect key="frame" x="169" y="156.5" width="76.5" height="25.5"/>
+                    <fontDescription key="fontDescription" name="Kanit-Regular" family="Kanit" pointSize="17"/>
+                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="เบอร์โทศัพท์" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dw2-Wk-k4T">
+                    <rect key="frame" x="40.5" y="193" width="83.5" height="25.5"/>
+                    <fontDescription key="fontDescription" name="Kanit-Regular" family="Kanit" pointSize="17"/>
+                    <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="อีเมลส่วนตัว" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7BX-9M-eEH">
+                    <rect key="frame" x="40" y="294.5" width="84" height="25.5"/>
+                    <fontDescription key="fontDescription" name="Kanit-Regular" family="Kanit" pointSize="17"/>
+                    <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="อีเมล" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4ZG-XT-a4e">
+                    <rect key="frame" x="88.5" y="243.5" width="35.5" height="25.5"/>
+                    <fontDescription key="fontDescription" name="Kanit-Regular" family="Kanit" pointSize="17"/>
+                    <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalCentering" baselineRelativeArrangement="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kyJ-p0-gJQ">
+                    <rect key="frame" x="145.5" y="192" width="248.5" height="331.5"/>
+                    <subviews>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="-" placeholder="เบอร์โทรศัพท์" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="dIN-Mo-rP6">
+                            <rect key="frame" x="0.0" y="0.0" width="248.5" height="27"/>
+                            <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <fontDescription key="fontDescription" name="Kanit-Regular" family="Kanit" pointSize="17"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="-" placeholder="email" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="lYq-7A-dGC">
+                            <rect key="frame" x="0.0" y="51" width="248.5" height="27"/>
+                            <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <fontDescription key="fontDescription" name="Kanit-Regular" family="Kanit" pointSize="17"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="-" placeholder="email" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="0Qr-Nk-jE6">
+                            <rect key="frame" x="0.0" y="101.5" width="248.5" height="27"/>
+                            <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <fontDescription key="fontDescription" name="Kanit-Regular" family="Kanit" pointSize="17"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="-" placeholder="Line" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="b4s-vO-hVl">
+                            <rect key="frame" x="0.0" y="152" width="248.5" height="27"/>
+                            <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <fontDescription key="fontDescription" name="Kanit-Regular" family="Kanit" pointSize="17"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="-" placeholder="Facebook" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="doW-Uz-APm">
+                            <rect key="frame" x="0.0" y="203" width="248.5" height="27"/>
+                            <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <fontDescription key="fontDescription" name="Kanit-Regular" family="Kanit" pointSize="17"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="-" placeholder="Instagram" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="X7B-cj-CMX">
+                            <rect key="frame" x="0.0" y="253.5" width="248.5" height="27"/>
+                            <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <fontDescription key="fontDescription" name="Kanit-Regular" family="Kanit" pointSize="17"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="-" placeholder="Linkedin" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="wMG-VM-xtl">
+                            <rect key="frame" x="0.0" y="304.5" width="248.5" height="27"/>
+                            <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <fontDescription key="fontDescription" name="Kanit-Regular" family="Kanit" pointSize="17"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="kyJ-p0-gJQ" secondAttribute="height" multiplier="3:4" id="O8O-wz-RpK"/>
+                    </constraints>
+                </stackView>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profile_line" translatesAutoresizingMaskIntoConstraints="NO" id="xzQ-Ak-E3C">
+                    <rect key="frame" x="91" y="341" width="33" height="33.5"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="xzQ-Ak-E3C" secondAttribute="height" multiplier="1:1" id="g1p-5o-lfa"/>
+                    </constraints>
+                </imageView>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profile_fb" translatesAutoresizingMaskIntoConstraints="NO" id="pre-uq-SjB">
+                    <rect key="frame" x="91" y="392" width="33" height="33"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="pre-uq-SjB" secondAttribute="height" multiplier="1:1" id="XtZ-VQ-hSD"/>
+                    </constraints>
+                </imageView>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profile_ig" translatesAutoresizingMaskIntoConstraints="NO" id="81w-d4-PeN">
+                    <rect key="frame" x="91" y="442.5" width="33" height="33"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="81w-d4-PeN" secondAttribute="height" multiplier="1:1" id="Kyb-tt-eTt"/>
+                    </constraints>
+                </imageView>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profile_link" translatesAutoresizingMaskIntoConstraints="NO" id="K4I-kU-sE9">
+                    <rect key="frame" x="91" y="493" width="33" height="33.5"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="K4I-kU-sE9" secondAttribute="height" multiplier="1:1" id="WdT-2p-O2j"/>
+                    </constraints>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K3Q-S1-bcy">
+                    <rect key="frame" x="0.0" y="834" width="414" height="62"/>
+                    <color key="backgroundColor" red="0.0" green="0.27588295940000002" blue="0.16469025609999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="K3Q-S1-bcy" secondAttribute="height" multiplier="20:3" id="oS0-Wv-4z8"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Kanit-Regular" family="Kanit" pointSize="24"/>
+                    <state key="normal" title="บันทึกข้อมูล">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="saveClick:" destination="-1" eventType="touchUpInside" id="0jP-LL-KTz"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="K4I-kU-sE9" firstAttribute="centerX" secondItem="81w-d4-PeN" secondAttribute="centerX" id="30m-OH-VOB"/>
+                <constraint firstItem="lEZ-mJ-mf0" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="3ba-9t-LU7"/>
+                <constraint firstItem="4ZG-XT-a4e" firstAttribute="centerY" secondItem="lYq-7A-dGC" secondAttribute="centerY" id="4zW-1B-tTv"/>
+                <constraint firstItem="kyJ-p0-gJQ" firstAttribute="top" secondItem="lEZ-mJ-mf0" secondAttribute="bottom" constant="10" id="7p9-Ba-dRb"/>
+                <constraint firstItem="81w-d4-PeN" firstAttribute="width" secondItem="pre-uq-SjB" secondAttribute="width" id="8An-cE-JLB"/>
+                <constraint firstItem="7BX-9M-eEH" firstAttribute="centerY" secondItem="0Qr-Nk-jE6" secondAttribute="centerY" id="9rL-wN-e5t"/>
+                <constraint firstItem="kyJ-p0-gJQ" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" multiplier="0.6" id="Dew-Aa-Sty"/>
+                <constraint firstItem="K3Q-S1-bcy" firstAttribute="bottom" secondItem="i5M-Pr-FkT" secondAttribute="bottom" id="Ji8-Ef-eof"/>
+                <constraint firstItem="4ZG-XT-a4e" firstAttribute="trailing" secondItem="Dw2-Wk-k4T" secondAttribute="trailing" id="Lnf-2f-kJP"/>
+                <constraint firstItem="Dw2-Wk-k4T" firstAttribute="centerY" secondItem="dIN-Mo-rP6" secondAttribute="centerY" id="OvQ-my-UUD"/>
+                <constraint firstItem="K3Q-S1-bcy" firstAttribute="trailing" secondItem="Q5M-cg-NOt" secondAttribute="trailing" id="PKn-jb-pad"/>
+                <constraint firstItem="lEZ-mJ-mf0" firstAttribute="top" secondItem="hkN-Dx-LaH" secondAttribute="bottom" constant="10" id="Pxt-yB-LgO"/>
+                <constraint firstItem="4k3-cQ-OSd" firstAttribute="trailing" secondItem="hkN-Dx-LaH" secondAttribute="trailing" id="TIt-ow-sj3"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="kyJ-p0-gJQ" secondAttribute="trailing" constant="20" id="Y3O-ca-oL9"/>
+                <constraint firstItem="hkN-Dx-LaH" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" multiplier="0.3" id="amM-1s-jug"/>
+                <constraint firstItem="hkN-Dx-LaH" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="dnc-Na-J1J"/>
+                <constraint firstItem="7BX-9M-eEH" firstAttribute="trailing" secondItem="4ZG-XT-a4e" secondAttribute="trailing" id="eCw-ut-Jd0"/>
+                <constraint firstItem="K4I-kU-sE9" firstAttribute="centerY" secondItem="wMG-VM-xtl" secondAttribute="centerY" id="f4G-fJ-Y7Q"/>
+                <constraint firstItem="xzQ-Ak-E3C" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" multiplier="0.08" id="gPg-5E-M99"/>
+                <constraint firstItem="pre-uq-SjB" firstAttribute="width" secondItem="xzQ-Ak-E3C" secondAttribute="width" id="gWP-Dx-2L4"/>
+                <constraint firstItem="Dw2-Wk-k4T" firstAttribute="trailing" secondItem="i5M-Pr-FkT" secondAttribute="centerX" multiplier="0.6" id="jAk-9R-dLm"/>
+                <constraint firstItem="pre-uq-SjB" firstAttribute="centerY" secondItem="doW-Uz-APm" secondAttribute="centerY" id="m5p-AZ-iRD"/>
+                <constraint firstItem="xzQ-Ak-E3C" firstAttribute="centerY" secondItem="b4s-vO-hVl" secondAttribute="centerY" id="nQ3-vM-uBU"/>
+                <constraint firstItem="4k3-cQ-OSd" firstAttribute="width" secondItem="hkN-Dx-LaH" secondAttribute="width" multiplier="0.3" id="qfT-G7-jkF"/>
+                <constraint firstItem="81w-d4-PeN" firstAttribute="centerX" secondItem="pre-uq-SjB" secondAttribute="centerX" id="rk2-KM-CGO"/>
+                <constraint firstItem="K4I-kU-sE9" firstAttribute="width" secondItem="81w-d4-PeN" secondAttribute="width" id="sEH-lL-Bkf"/>
+                <constraint firstItem="K3Q-S1-bcy" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" id="sQd-DW-Iet"/>
+                <constraint firstItem="pre-uq-SjB" firstAttribute="centerX" secondItem="xzQ-Ak-E3C" secondAttribute="centerX" id="tdz-ll-XTl"/>
+                <constraint firstItem="4k3-cQ-OSd" firstAttribute="bottom" secondItem="hkN-Dx-LaH" secondAttribute="bottom" id="wh3-c0-BWf"/>
+                <constraint firstItem="hkN-Dx-LaH" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="centerY" multiplier="0.05" id="x1t-m0-P11"/>
+                <constraint firstItem="xzQ-Ak-E3C" firstAttribute="trailing" secondItem="4ZG-XT-a4e" secondAttribute="trailing" id="xMm-EQ-sIj"/>
+                <constraint firstItem="81w-d4-PeN" firstAttribute="centerY" secondItem="X7B-cj-CMX" secondAttribute="centerY" id="yoT-1e-ltv"/>
+            </constraints>
+            <point key="canvasLocation" x="63.768115942028992" y="65.625"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="menu_personal_g" width="132" height="132"/>
+        <image name="profile_camera" width="90" height="90"/>
+        <image name="profile_fb" width="63" height="63"/>
+        <image name="profile_ig" width="64" height="63"/>
+        <image name="profile_line" width="69" height="69"/>
+        <image name="profile_link" width="66" height="67"/>
+    </resources>
+</document>

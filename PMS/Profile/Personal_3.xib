@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Kanit-Regular.ttf">
+            <string>Kanit-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="Personal_3">
+            <connections>
+                <outlet property="branchL" destination="Eg2-lx-gnL" id="or1-eF-qdP"/>
+                <outlet property="branchR" destination="poH-td-UiB" id="93I-1E-lT7"/>
+                <outlet property="departmentL" destination="3N8-vu-S23" id="4GY-dC-jxY"/>
+                <outlet property="departmentR" destination="eEq-Lr-0Tz" id="3hU-m1-YP8"/>
+                <outlet property="emailL" destination="UDA-3A-pCC" id="Wg1-fR-qdj"/>
+                <outlet property="emailR" destination="cBf-AK-hiU" id="uQu-K1-DlX"/>
+                <outlet property="idL" destination="Uqv-Sy-8RK" id="ECh-F5-rPB"/>
+                <outlet property="idR" destination="PXE-8w-ifo" id="Rdd-PQ-NFs"/>
+                <outlet property="nameL" destination="9Rw-et-rrC" id="ceW-VW-U6p"/>
+                <outlet property="nameR" destination="BrO-xk-X8n" id="jXy-tq-b3W"/>
+                <outlet property="positionL" destination="i9a-H3-XVN" id="3Rd-dl-iw8"/>
+                <outlet property="positionR" destination="Vw7-k4-HHa" id="rGe-3J-FJm"/>
+                <outlet property="surnameL" destination="p36-ce-y8g" id="BeJ-vU-IFc"/>
+                <outlet property="surnameR" destination="hd9-TQ-kc5" id="yvi-JM-5QF"/>
+                <outlet property="telL" destination="fra-aT-gCh" id="8CB-9P-aPx"/>
+                <outlet property="telR" destination="pHb-qF-rfR" id="llu-YN-vxJ"/>
+                <outlet property="view" destination="ua8-7O-zlG" id="uuh-Zp-C8V"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="ua8-7O-zlG">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ชื่อ" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Rw-et-rrC">
+                    <rect key="frame" x="104" y="45.5" width="20" height="25.5"/>
+                    <fontDescription key="fontDescription" name="Kanit-Regular" family="Kanit" pointSize="17"/>
+                    <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="รหัสพนักงาน" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uqv-Sy-8RK">
+                    <rect key="frame" x="34" y="175" width="90" height="25.5"/>
+                    <fontDescription key="fontDescription" name="Kanit-Regular" family="Kanit" pointSize="17"/>
+                    <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="สาขา" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Eg2-lx-gnL">
+                    <rect key="frame" x="88.5" y="240" width="35.5" height="25.5"/>
+                    <fontDescription key="fontDescription" name="Kanit-Regular" family="Kanit" pointSize="17"/>
+                    <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="แผนก" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3N8-vu-S23">
+                    <rect key="frame" x="83" y="304.5" width="41" height="25.5"/>
+                    <fontDescription key="fontDescription" name="Kanit-Regular" family="Kanit" pointSize="17"/>
+                    <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ตำแหน่ง" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i9a-H3-XVN">
+                    <rect key="frame" x="66" y="369.5" width="58" height="25.5"/>
+                    <fontDescription key="fontDescription" name="Kanit-Regular" family="Kanit" pointSize="17"/>
+                    <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="เบอร์โทรศัพท์" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fra-aT-gCh">
+                    <rect key="frame" x="32" y="434" width="92" height="25.5"/>
+                    <fontDescription key="fontDescription" name="Kanit-Regular" family="Kanit" pointSize="17"/>
+                    <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="นามสกุล" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p36-ce-y8g">
+                    <rect key="frame" x="65" y="110.5" width="59" height="25.5"/>
+                    <fontDescription key="fontDescription" name="Kanit-Regular" family="Kanit" pointSize="17"/>
+                    <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalCentering" baselineRelativeArrangement="YES" translatesAutoresizingMaskIntoConstraints="NO" id="TdK-Hv-Hjf">
+                    <rect key="frame" x="144" y="45" width="240" height="480"/>
+                    <subviews>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="-" placeholder="เบอร์โทรศัพท์" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="BrO-xk-X8n">
+                            <rect key="frame" x="0.0" y="0.0" width="240" height="27"/>
+                            <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <fontDescription key="fontDescription" name="Kanit-Regular" family="Kanit" pointSize="17"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="-" placeholder="email" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="hd9-TQ-kc5">
+                            <rect key="frame" x="0.0" y="64.5" width="240" height="27"/>
+                            <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <fontDescription key="fontDescription" name="Kanit-Regular" family="Kanit" pointSize="17"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="-" placeholder="Line" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="PXE-8w-ifo">
+                            <rect key="frame" x="0.0" y="129.5" width="240" height="27"/>
+                            <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <fontDescription key="fontDescription" name="Kanit-Regular" family="Kanit" pointSize="17"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="-" placeholder="Instagram" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="poH-td-UiB">
+                            <rect key="frame" x="0.0" y="194" width="240" height="27"/>
+                            <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <fontDescription key="fontDescription" name="Kanit-Regular" family="Kanit" pointSize="17"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="-" placeholder="Linkedin" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="eEq-Lr-0Tz">
+                            <rect key="frame" x="0.0" y="259" width="240" height="27"/>
+                            <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <fontDescription key="fontDescription" name="Kanit-Regular" family="Kanit" pointSize="17"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="-" placeholder="Linkedin" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="Vw7-k4-HHa">
+                            <rect key="frame" x="0.0" y="323.5" width="240" height="27"/>
+                            <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <fontDescription key="fontDescription" name="Kanit-Regular" family="Kanit" pointSize="17"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="-" placeholder="Linkedin" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="pHb-qF-rfR">
+                            <rect key="frame" x="0.0" y="388.5" width="240" height="27"/>
+                            <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <fontDescription key="fontDescription" name="Kanit-Regular" family="Kanit" pointSize="17"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="-" placeholder="Linkedin" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="cBf-AK-hiU">
+                            <rect key="frame" x="0.0" y="453" width="240" height="27"/>
+                            <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <fontDescription key="fontDescription" name="Kanit-Regular" family="Kanit" pointSize="17"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="TdK-Hv-Hjf" secondAttribute="height" multiplier="3:6" id="KJC-k1-SZA"/>
+                    </constraints>
+                </stackView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="email" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UDA-3A-pCC">
+                    <rect key="frame" x="81" y="499" width="43" height="25.5"/>
+                    <fontDescription key="fontDescription" name="Kanit-Regular" family="Kanit" pointSize="17"/>
+                    <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="iAz-jN-hYX"/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="p36-ce-y8g" firstAttribute="centerY" secondItem="hd9-TQ-kc5" secondAttribute="centerY" id="0Ip-CI-KTt"/>
+                <constraint firstItem="3N8-vu-S23" firstAttribute="trailing" secondItem="Eg2-lx-gnL" secondAttribute="trailing" id="9ZE-Uj-BPv"/>
+                <constraint firstItem="i9a-H3-XVN" firstAttribute="centerY" secondItem="Vw7-k4-HHa" secondAttribute="centerY" id="B0X-ZH-wb3"/>
+                <constraint firstItem="UDA-3A-pCC" firstAttribute="trailing" secondItem="fra-aT-gCh" secondAttribute="trailing" id="Gb4-tA-IM1"/>
+                <constraint firstItem="fra-aT-gCh" firstAttribute="centerY" secondItem="pHb-qF-rfR" secondAttribute="centerY" id="H9I-9E-VWK"/>
+                <constraint firstItem="p36-ce-y8g" firstAttribute="trailing" secondItem="9Rw-et-rrC" secondAttribute="trailing" id="Ny4-AM-zMN"/>
+                <constraint firstItem="Eg2-lx-gnL" firstAttribute="centerY" secondItem="poH-td-UiB" secondAttribute="centerY" id="UDI-3A-fer"/>
+                <constraint firstItem="Uqv-Sy-8RK" firstAttribute="centerY" secondItem="PXE-8w-ifo" secondAttribute="centerY" id="UFC-dm-aYF"/>
+                <constraint firstItem="TdK-Hv-Hjf" firstAttribute="width" secondItem="ua8-7O-zlG" secondAttribute="width" multiplier="0.58" id="cGh-qt-3Ov"/>
+                <constraint firstItem="Eg2-lx-gnL" firstAttribute="trailing" secondItem="Uqv-Sy-8RK" secondAttribute="trailing" id="eRi-kB-Vh0"/>
+                <constraint firstItem="UDA-3A-pCC" firstAttribute="centerY" secondItem="cBf-AK-hiU" secondAttribute="centerY" id="eRy-BS-pkf"/>
+                <constraint firstItem="9Rw-et-rrC" firstAttribute="centerY" secondItem="BrO-xk-X8n" secondAttribute="centerY" id="ipA-HP-QCI"/>
+                <constraint firstItem="iAz-jN-hYX" firstAttribute="trailing" secondItem="TdK-Hv-Hjf" secondAttribute="trailing" constant="30" id="kce-JQ-Y5q"/>
+                <constraint firstItem="TdK-Hv-Hjf" firstAttribute="top" secondItem="ua8-7O-zlG" secondAttribute="centerY" multiplier="0.1" id="nIX-u7-Rtd"/>
+                <constraint firstItem="i9a-H3-XVN" firstAttribute="trailing" secondItem="3N8-vu-S23" secondAttribute="trailing" id="nrd-zg-QRI"/>
+                <constraint firstItem="3N8-vu-S23" firstAttribute="centerY" secondItem="eEq-Lr-0Tz" secondAttribute="centerY" id="pga-Wm-Y11"/>
+                <constraint firstItem="Uqv-Sy-8RK" firstAttribute="trailing" secondItem="p36-ce-y8g" secondAttribute="trailing" id="r6c-OT-W1S"/>
+                <constraint firstItem="9Rw-et-rrC" firstAttribute="trailing" secondItem="ua8-7O-zlG" secondAttribute="centerX" multiplier="0.6" id="tW2-oY-y2X"/>
+                <constraint firstItem="fra-aT-gCh" firstAttribute="trailing" secondItem="i9a-H3-XVN" secondAttribute="trailing" id="zHf-F2-aYe"/>
+            </constraints>
+            <point key="canvasLocation" x="63.768115942028992" y="65.625"/>
+        </view>
+    </objects>
+</document>
