@@ -30,7 +30,7 @@
 
 @synthesize fontSize,fontRegular,fontLight,fontMedium,fontSemibold,fontBold,mainThemeColor,mainThemeColor2,cancelThemeColor;
 
-@synthesize loginStatus,mainTabStatus,userID,adminID,userFullname,userLogoUrl,userDepartment,serverURL,serverURLshort,offlineBtnStatus,leaveBtnShow,otBtnShow,wfhBtnShow;
+@synthesize loginStatus,mainTabStatus,userID,adminID,userFullname,userLogoUrl,userDepartment,serverURL,serverURLshort,offlineBtnStatus,leaveBtnShow,otBtnShow,wfhBtnShow,heroURL,heroURLshort;
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
@@ -84,8 +84,8 @@
     serverURLshort = @"http://m.mangkud.co/";
     serverURL = @"http://m.mangkud.co/index.php?MobileApi/";
     
-//    serverURLshort = @"http://dev-qrcode.mangkud.co/";
-//    serverURL = @"http://dev-qrcode.mangkud.co/index.php?MobileApi/";
+    heroURLshort = @"http://spm-hero.mangkud.co/";
+    heroURL = @"http://spm-hero.mangkud.co/api/";
     
 //    loginStatus = YES;
 //    userID = @"87";// พี่เก่ง รหัสพยาบาล 151589

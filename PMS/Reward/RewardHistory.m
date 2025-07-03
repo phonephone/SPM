@@ -43,7 +43,7 @@
     
     AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
     
-    NSString* url = [NSString stringWithFormat:@"http://spm-hero.thaidevelopers.com/api/history_user/%@",delegate.userID];
+    NSString* url = [NSString stringWithFormat:@"%@history_user/%@",delegate.heroURL,delegate.userID];
     
     manager.responseSerializer.acceptableContentTypes = [NSSet setWithObject:@"application/json"];
     [manager GET:url parameters:nil headers:nil progress:nil success:^(NSURLSessionDataTask *task, id responseObject)

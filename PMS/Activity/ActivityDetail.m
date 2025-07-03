@@ -47,7 +47,7 @@
     
     AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
     
-    NSString* url = [NSString stringWithFormat:@"http://spm-hero.thaidevelopers.com/api/event_info/%@/%@",rewardID,delegate.userID];
+    NSString* url = [NSString stringWithFormat:@"%@event_info/%@/%@",delegate.heroURL,rewardID,delegate.userID];
     
     manager.responseSerializer.acceptableContentTypes = [NSSet setWithObject:@"application/json"];
     [manager GET:url parameters:nil headers:nil progress:nil success:^(NSURLSessionDataTask *task, id responseObject)
@@ -138,7 +138,7 @@
     
     AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
     
-    NSString* url = [NSString stringWithFormat:@"http://spm-hero.thaidevelopers.com/api/event_booking"];
+    NSString* url = [NSString stringWithFormat:@"%@event_booking",delegate.heroURL];
     
     NSDictionary *parameters = @{@"id_user":delegate.userID,
                                  @"id_event":[listJSON objectForKey:@"id"]

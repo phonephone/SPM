@@ -56,13 +56,6 @@
     remarkR.hidden = YES;
     warnLabel.hidden = YES;
     
-    /*
-    qrString = @"https://spm-hero.thaidevelopers.com/namecard/spm/2671";
-    NSArray *qrArray = [qrString componentsSeparatedByString:@"/"];
-    qrID = [qrArray lastObject];
-    [self loadNurseID:qrID];
-    */
-    
     [self loadReason];
 }
 
@@ -405,7 +398,7 @@
                     prevLayer = nil;
                     
                     qrString = detectionString;
-                    //https://spm-hero.thaidevelopers.com/namecard/spm/2671
+                    //http://spm-hero.mangkud.co/namecard/spm/2671
                     NSArray *qrArray = [qrString componentsSeparatedByString:@"/"];
                     qrID = [qrArray lastObject];
                     [self loadNurseID:qrID];

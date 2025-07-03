@@ -53,6 +53,9 @@
 @property (nonatomic) NSString *serverURL;
 @property (nonatomic) NSString *serverURLshort;
 
+@property (nonatomic) NSString *heroURL;
+@property (nonatomic) NSString *heroURLshort;
+
 @property (nonatomic) NSString *offlineBtnStatus;
 
 
