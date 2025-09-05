@@ -373,10 +373,15 @@
         [navi pushViewController:sub animated:YES];
     }
     else if ([menuID isEqualToString:@"5"]) {//We Plan
-        Leave_Left *lf = [storyboard instantiateViewControllerWithIdentifier:@"Leave_Left"];
-        lf.mode = @"Leave_Ahead";
-        [navi pushViewController:lf animated:YES];
+        web.urlStr = [cellArray objectForKey:@"url_link"];
+        web.titleStr = menuName;
+        [navi pushViewController:web animated:YES];
     }
+//    else if ([menuID isEqualToString:@"5"]) {//We Plan
+//        Leave_Left *lf = [storyboard instantiateViewControllerWithIdentifier:@"Leave_Left"];
+//        lf.mode = @"Leave_Ahead";
+//        [navi pushViewController:lf animated:YES];
+//    }
     else if ([menuID isEqualToString:@"6"]) {//We Learn
         sub.subArray = [cellArray objectForKey:@"sub_menu"];
         sub.subMenuTitle = menuName;
@@ -421,6 +426,12 @@
         web.titleStr = menuName;
         [navi pushViewController:web animated:YES];
     }
+    else {
+        web.urlStr = [cellArray objectForKey:@"url_link"];
+        web.titleStr = menuName;
+        [navi pushViewController:web animated:YES];
+    }
+    
     
     [self.menuContainerViewController setMenuState:MFSideMenuStateClosed];
 }

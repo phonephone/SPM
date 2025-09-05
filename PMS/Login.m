@@ -93,7 +93,7 @@
     if ([userField.text isEqualToString:@"888"])
     {
         //151589 พี่เก่ง
-        userField.text = @"500045";//151589,010334
+        userField.text = @"500045";//151589,010334,620549
         passField.text = @"1111";
         [self loadLogin];
     }

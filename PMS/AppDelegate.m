@@ -87,8 +87,8 @@
     heroURLshort = @"http://spm-hero.mangkud.co/";
     heroURL = @"http://spm-hero.mangkud.co/api/";
     
-//    loginStatus = YES;
-//    userID = @"87";// พี่เก่ง รหัสพยาบาล 151589
+    //loginStatus = YES;
+    //userID = @"87";// พี่เก่ง รหัสพยาบาล 151589
     
     mainThemeColor = [UIColor colorWithRed:0.0/255 green:70.0/255 blue:42.0/255 alpha:1];
     mainThemeColor2 = [UIColor colorWithRed:178.0/255 green:143.0/255 blue:80.0/255 alpha:1];
